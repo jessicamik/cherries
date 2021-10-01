@@ -65,10 +65,10 @@ const bakedMaterial = new THREE.MeshBasicMaterial({ map: bakedTexture })
  * Model
  */
 gltfLoader.load(
-    'cherries.txt',
+    'cherries.gltf',
     (gltf) => {
         const model = gltf.scene;
-        model.name = 'cherries.txt';
+        model.name = 'cherries.gltf';
        
         gltf.scene.traverse((child) =>
         {
